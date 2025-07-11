@@ -1,6 +1,16 @@
-GET http://localhost:3000/users
-###new post
+GET http://localhost:3000/users/
 
-get http://localhost:3000/
+### check 
 
+post http://localhost:3000/users/check 
+Content-Type: application/json
 
+{"currency": "usd", "amount": 2000}
+
+### solve
+
+post http://localhost:3000/users/check 
+Content-Type: application/json
+
+{"currency": "usd", "amount": 2000}
+ 
