@@ -93,16 +93,14 @@ else {
 
 // solve route
 router.post('/solve', function(req, res, next) {
-/*
- app.route('/api/solve')
-    .post((req, res) => {*/
 
 let puzzleString = req.body.puzzle
     let result = solver.validate(puzzleString)
       
-      if (result == "Invalid characters") {
-        return res.json({ error: 'Invalid characters in puzzle' })
-      }
+if (result == "Invalid characters") {
+    return res.json({ error: 'Invalid characters in puzzle' })
+  }
+  
 if (result == "missing") {
   return res.json({ error: 'Required field missing' })
 }
