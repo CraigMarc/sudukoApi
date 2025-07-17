@@ -1,6 +1,14 @@
+/*
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 const express = require('express');
 const router = express.Router();
-const SudokuSolver = require("../controllers/sudukoController.js")
+const SudokuSolver = require("../controllers/sudukoController.js")*/
+
+
+import express from 'express'
+const router = express.Router();
+import SudokuSolver from '../controllers/sudukoController.js'
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -121,5 +129,5 @@ else {
    
 
   
-module.exports = router;
-    
+//module.exports = router;
+export default router  

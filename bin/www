@@ -3,11 +3,17 @@
 /**
  * Module dependencies.
  */
+/*
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 
 var app = require('../app');
 var debug = require('debug')('expresstemplate:server');
-var http = require('http');
+var http = require('http');*/
 
+import app from '../app.js'
+import debug from 'debug'
+import http from 'http'
 /**
  * Get port from environment and store in Express.
  */

@@ -1,7 +1,3 @@
-const asyncHandler = require("express-async-handler");
-const { body, validationResult } = require("express-validator");
-const dotenv = require('dotenv');
-dotenv.config();
 
 /*
 
@@ -746,4 +742,5 @@ return pencilFinal
   }
 }
 
-module.exports = SudokuSolver;
+//module.exports = SudokuSolver;
+export default SudokuSolver
