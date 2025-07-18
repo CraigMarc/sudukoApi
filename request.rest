@@ -16,4 +16,11 @@ post http://localhost:3000/users/solve
 Content-Type: application/json
 
 {"puzzle": "1.5..2.84..63.12.7.2..5.....9..1....8.2.3674.3.7.2..9.47...8..1..16....926914.37."}
+
+### solve2
+
+post http://localhost:3000/users/solve 
+Content-Type: application/json
+
+{"puzzle": "8...6..3..237..64..4..358...8.61.7.99.......35.4.98.2...914..7..38..751..1..5...2"}
  

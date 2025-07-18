@@ -1,6 +1,3 @@
-/*
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -13,8 +10,10 @@ const cors = require('cors');
 
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');*/
+const usersRouter = require('./routes/users');
 
+// if using modules 
+/*
 import createError from 'http-errors'
 import express from 'express'
 import path from 'path'
@@ -26,7 +25,7 @@ import cors from "cors"
 import {fileURLToPath} from 'url'
 
 import indexRouter from './routes/index.js'
-import usersRouter from './routes/users.js'
+import usersRouter from './routes/users.js'*/
 
 const app = express();
 
@@ -50,8 +49,10 @@ await mongoose.connect(mongoDB);
 }*/
 
 // view engine setup
+// if using modules change the following
+/*
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.dirname(__filename);*/
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -81,5 +82,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-export default app
-//module.exports = app;
+//export default app
+module.exports = app;
